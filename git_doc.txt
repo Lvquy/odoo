@@ -1,0 +1,22 @@
+Git Document
+
+đi tới thư mục chứa code cần tạo git:
+Khởi tạo git bằng lệnh:
+$ git init
+Cài đặt thông số cho git:
+$ git config --global user.name "your_github_username"
+$ git config --global user.email "your_github_email"
+$ git config -l
+
+Tạo 1 repos trên github lấy link repos dán vào dưới
+$ git remote add origin https://github.com/Lvquy/odoo.git
+Sử dụng lệnh git remote show, ví dụ xem remote origin:
+
+$ git remote show origin
+
+Dùng lệnh sau để khi push sẽ không cần đăng nhập nữa
+$ git config credential.helper store
+$ git push https://github.com/Lvquy/odoo.git
+Username: <type your username>
+Password: <type your password>
+Cách lấy password: Vào setting -> Developer setting -> personal access token -> tạo token tích các quyền truy cập và lấy mã.
