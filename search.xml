@@ -1,0 +1,22 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<!--search-->
+    <record id="view_search_nhan_su" model="ir.ui.view">
+        <field name="name">nhan.su.search</field>
+        <field name="model">nhan.su</field>
+        <field name="priority" eval="15"/>
+        <field name="arch" type="xml">
+            <search string="Search Nhân sự">
+                <field name="name"/>
+                <field name="state"/>
+                <filter string="Done" name="done" domain="[('state','=','1')]"/>
+                <filter string="Draft" name="draft" domain="[('state','=','0')]"/>
+                <group expand="0" string="Group By">
+                    <filter string="Trạng thái" name="state" domain="[]" context="{'group_by': 'state'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+</odoo>
+
