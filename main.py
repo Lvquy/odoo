@@ -1,7 +1,7 @@
 #  Auto generated Odoo 15 sample code
 utf8 = """# -*- coding: utf-8 -*-"""
 module_name = "custom_b2c" # ex: b2c_mart
-class_name = "ThiCong" # ex. ProductTemplate
+class_name = "ProductTemplate" # ex. ProductTemplate
 model_id = "thi.cong" #ex: product.template
 desc = "Thi công công trình" #ex: Product Template
 model_form_tree = model_id.replace('.', '_') # is: product_template
