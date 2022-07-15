@@ -1,19 +1,18 @@
-# Odoo 15 Sample
-utf8 = """# -*- coding: utf-8 -*-
-
-
-"""
-module_name = "vitinhso" # ex: b2c_mart
-class_name = "NhanSu" # ex. ProductTemplate
-model_id = "nhan.su" #ex: product.template
-desc = "Nhân sự" #ex: Product Template
+#  Auto generated Odoo 15 sample code
+utf8 = """# -*- coding: utf-8 -*-"""
+module_name = "custom_b2c" # ex: b2c_mart
+class_name = "ThiCong" # ex. ProductTemplate
+model_id = "thi.cong" #ex: product.template
+desc = "Thi công công trình" #ex: Product Template
 model_form_tree = model_id.replace('.', '_') # is: product_template
-tree_form_string = "Nhân sự" # ex: Product Template
+tree_form_string = "Thi công" # ex: Product Template
 
 a = """
 from odoo import api, fields, models
 from datetime import datetime
-from odoo.exceptions import UserError"""
+from odoo.exceptions import UserError
+
+"""
 models = """class %s(models.Model):
     _name = '%s'
     _inherit = ['mail.thread','mail.activity.mixin']

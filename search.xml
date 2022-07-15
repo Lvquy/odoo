@@ -2,12 +2,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 <!--search-->
-    <record id="view_search_nhan_su" model="ir.ui.view">
-        <field name="name">nhan.su.search</field>
-        <field name="model">nhan.su</field>
+    <record id="view_search_thi_cong" model="ir.ui.view">
+        <field name="name">thi.cong.search</field>
+        <field name="model">thi.cong</field>
         <field name="priority" eval="15"/>
         <field name="arch" type="xml">
-            <search string="Search Nhân sự">
+            <search string="Search Thi công">
                 <field name="name"/>
                 <field name="state"/>
                 <filter string="Done" name="done" domain="[('state','=','1')]"/>

@@ -2,11 +2,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>
-        <record id="nhan_su_form" model="ir.ui.view">
-            <field name="name">nhan.su.form</field>
-            <field name="model">nhan.su</field>
+        <record id="thi_cong_form" model="ir.ui.view">
+            <field name="name">thi.cong.form</field>
+            <field name="model">thi.cong</field>
             <field name="arch" type="xml">
-                <form string="Nhân sự">
+                <form string="Thi công">
                     <header>
                             <field name="state" widget="statusbar" statusbar_visible="0,1"/>
                             <button name="confirm" string="Confirm" type="object" attrs="{'invisible':[('state', 'in', ('1'))]}"/>
@@ -33,20 +33,20 @@
             </field>
         </record>
 
-        <record id="nhan_su_tree" model="ir.ui.view">
-            <field name="name">nhan.su.tree</field>
-            <field name="model">nhan.su</field>
+        <record id="thi_cong_tree" model="ir.ui.view">
+            <field name="name">thi.cong.tree</field>
+            <field name="model">thi.cong</field>
             <field name="arch" type="xml">
-                <tree string="Nhân sự" editable="bottom" decoration-danger="state=='0'" decoration-success="state=='1'">
+                <tree string="Thi công" editable="bottom" decoration-danger="state=='0'" decoration-success="state=='1'">
                     <field name="name" optional="show"/>
                 </tree>
             </field>
         </record>
 
         <!-- action view-->
-        <record id="action_view_nhan_su" model="ir.actions.act_window">
-            <field name="name">Nhân sự</field>
-            <field name="res_model">nhan.su</field>
+        <record id="action_view_thi_cong" model="ir.actions.act_window">
+            <field name="name">Thi công</field>
+            <field name="res_model">thi.cong</field>
             <field name="view_mode">tree,form</field>
             <field name="domain">[('create_uid', '=', uid)]</field>
             <field name="help" type="html">
@@ -55,9 +55,9 @@
                 </p>
             </field>
         </record>
-        <menuitem id="menu_nhan_su" name="Nhân sự" sequence="1"
-              web_icon="vitinhso,static/src/img/logo.png" groups="base.group_system"/>
-        <menuitem id="menu_sub_nhan_su" name="Nhân sự" parent="menu_nhan_su" action="action_view_nhan_su"
+        <menuitem id="menu_thi_cong" name="Thi công" sequence="1"
+              web_icon="custom_b2c,static/src/img/logo.png" groups="base.group_system"/>
+        <menuitem id="menu_sub_thi_cong" name="Thi công" parent="menu_thi_cong" action="action_view_thi_cong"
               sequence="1" groups="base.group_system"/>
     </data>
 </odoo>

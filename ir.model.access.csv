@@ -1,5 +1,5 @@
 
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 
-access_vitinhso_nhan_su_root,nhan.su.root,model_nhan_su,base.group_system,1,1,1,1
+access_custom_b2c_thi_cong_root,thi.cong.root,model_thi_cong,base.group_system,1,1,1,1
 

@@ -1,9 +1,6 @@
 # -*- coding: utf-8 -*-
-
-
-
 {
-    'name': 'NhanSu',
+    'name': 'ThiCong',
     'version': '1',
     'category': 'category_xxx',
     'live_test_url': 'live_test_url_xxx',

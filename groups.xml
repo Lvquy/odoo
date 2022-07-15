@@ -2,14 +2,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data noupdate="1">
-        <record model="ir.module.category" id="module_vitinhso_user">
-            <field name="name">vitinhso Group</field>
-            <field name="description">vitinhso Group</field>
+        <record model="ir.module.category" id="module_custom_b2c_user">
+            <field name="name">custom_b2c Group</field>
+            <field name="description">custom_b2c Group</field>
             <field name="sequence">30</field>
         </record>
-        <record id="vitinhso.group_vitinhso" model="res.groups">
-            <field name="name">vitinhso Group</field>
-            <field name="category_id" ref="vitinhso.module_vitinhso_user"/>
+        <record id="custom_b2c.group_custom_b2c" model="res.groups">
+            <field name="name">custom_b2c Group</field>
+            <field name="category_id" ref="custom_b2c.module_custom_b2c_user"/>
         </record>
     </data>
 </odoo>
